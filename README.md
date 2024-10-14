@@ -4,8 +4,7 @@ A responsive React template built with **Vite** for fast and efficient developme
 **Vite**로 빠르고 효율적인 개발을 위해 만들어진 반응형 **React** 템플릿입니다. 이 템플릿은 **미디어 쿼리**를 사용하여 모바일 디바이스를 감지하는 **커스텀 훅**과 확장 가능한 구조를 제공합니다.
 
 <p align="center">
-  <img src="./public/img1.png" alt="React Responsive Template" width="100%" />
-  <img src="./public/img2.png" alt="React Responsive Template" width="300" />
+  <img src="./public/img.png" alt="React Responsive Template" width="100%" />
 </p>
 
 ## Features / 주요 기능 🚀
