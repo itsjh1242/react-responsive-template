@@ -1,50 +1,83 @@
-# React + TypeScript + Vite
+# React Responsive Template 🌐
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive React template built with **Vite** for fast and efficient development. This template includes a custom hook for detecting mobile devices using media queries and provides a scalable structure for building responsive web applications.
+**Vite**로 빠르고 효율적인 개발을 위해 만들어진 반응형 **React** 템플릿입니다. 이 템플릿은 **미디어 쿼리**를 사용하여 모바일 디바이스를 감지하는 **커스텀 훅**과 확장 가능한 구조를 제공합니다.
 
-Currently, two official plugins are available:
+<p align="center">
+  <img src="./public/img1.png" alt="React Responsive Template" width="100%" />
+  <img src="./public/img2.png" alt="React Responsive Template" width="300" />
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features / 주요 기능 🚀
 
-## Expanding the ESLint configuration
+- **Vite** for fast development and hot module replacement (HMR)
+- **TypeScript** support
+- **Mobile detection** using custom hooks (`useIsMobile`)
+- **Responsive design** using `MediaQueryContext`
+- **Context API** for managing global state
+- **Lightweight** and ready for customization
+  <br/>
+- 빠른 개발 및 HMR(Hot Module Replacement)을 위한 **Vite**
+- **TypeScript** 지원
+- **useIsMobile** 커스텀 훅을 통한 모바일 감지
+- **MediaQueryContext**를 활용한 반응형 디자인
+- 전역 상태 관리를 위한 **Context API**
+- 가벼운 템플릿으로 쉽게 커스터마이징 가능
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Getting Started / 시작하기 💻
 
-- Configure the top-level `parserOptions` property like this:
+### 1. Clone the repository
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+git clone https://github.com/itsjh1242/react-responsive-template.git
+cd react-responsive-template
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 2. Install dependencies / 패키지 설치
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm install
 ```
+
+### 3. Run the development server / 개발 서버 실행
+
+```bash
+npm run dev
+```
+
+This will start the development server and you can view the app in your browser at http://localhost:3000.
+
+개발 서버가 실행되며, 브라우저에서 http://localhost:3000 주소로 앱을 확인할 수 있습니다.
+
+## Project Structure / 프로젝트 구조 📂
+
+```php
+react-responsive-template/
+├── src/
+│   ├── context/          # Context providers for global state management
+│   ├── hook/             # Custom hooks including useIsMobile
+│   ├── components/       # Reusable components like Layout
+│   ├── App.tsx           # Main entry point of the app
+├── public/               # Static assets
+├── index.html            # Entry HTML file
+├── vite.config.ts        # Vite configuration
+└── package.json          # Project dependencies
+```
+
+## Technologies Used / 사용된 기술 🛠️
+
+- React + TypeScript
+
+- Vite: For blazing fast builds and development (빠른 빌드와 개발을 위한 Vite)
+
+- Tailwind CSS: For easy and efficient styling (효율적인 스타일링을 위한 Tailwind CSS (적용 시))
+
+- Context API: For managing state globally (전역 상태 관리를 위한 Context API)
+
+- Custom Hooks: For detecting mobile devices using media queries (미디어 쿼리를 통한 모바일 디바이스 감지를 위한 커스텀 훅)
+
+## License / 라이선스 📜
+
+This project is licensed under the MIT License.
+
+이 프로젝트는 MIT License 하에 라이선스가 부여되었습니다.
